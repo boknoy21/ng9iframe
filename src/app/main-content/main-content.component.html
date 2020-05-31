@@ -1,15 +1,16 @@
+<div class="container">
+  <h1>Angular 9 with iFrame</h1>
+  <mat-tab-group class="tab-group" mat-align-tabs="start">
+    <mat-tab label="iFrame 1">
+      <iframe id="iFrame1" class="frame-content" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+              src="https://env-215346.ma.cloud.microstrategy.com/MicroStrategyLibrary/app/B7CA92F04B9FAE8D941C3E9B7E0CD754/0D0CDC8F11E97E8F00000080AFB3A407/W100--KB708DC9B11EA0BBD00000080EF6E7815">
+      </iframe>
+    </mat-tab>
+    <mat-tab label="iFrame 2">
+      <iframe id="iFrame2" class="frame-content" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+              [src]="sanitizedUrl2">
+      </iframe>
+    </mat-tab>
+  </mat-tab-group>
+</div>
 
-<h1>Angular 9 with iFrame</h1>
-
-<mat-tab-group mat-align-tabs="start">
-  <mat-tab label="iFrame 1">
-    <iframe id="iFrame1" class="frame-content" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
-            src="https://env-215346.ma.cloud.microstrategy.com/MicroStrategyLibrary/app/B7CA92F04B9FAE8D941C3E9B7E0CD754/0D0CDC8F11E97E8F00000080AFB3A407/W100--KB708DC9B11EA0BBD00000080EF6E7815">
-    </iframe>
-  </mat-tab>
-  <mat-tab label="iFrame 2">
-    <iframe id="iFrame2" class="frame-content" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
-            [src]="sanitizedUrl2">
-    </iframe>
-  </mat-tab>
-</mat-tab-group>
